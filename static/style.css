@@ -1,0 +1,109 @@
+ /* Reset de margin e padding para garantir consistência */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f7;
+    color: #3d3b61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #6a4c9c;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Formulário */
+.form {
+    margin-bottom: 30px;
+}
+
+.form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #6a4c9c;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #6a4c9c;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form button {
+    background-color: #9c7bb5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #6a4c9c;
+}
+
+/* Exibição da imagem do gato */
+.gato img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.gato p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #9c7bb5;
+}
+
+/* Mensagem de erro */
+.gato p.erro {
+    color: #ff5c8d;
+    font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #6a4c9c;
+    text-align: center;
+}
