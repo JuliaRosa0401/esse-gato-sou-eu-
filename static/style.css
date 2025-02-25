@@ -18,26 +18,31 @@ body {
 }
 
 /* Cabeçalho */
-header {
+header { 
+    height: 10vh;
+    padding: 20px 0;;
     text-align: center;
     margin-bottom: 30px;
+    background-color: #6a4c9c;
+    display: flex;
 }
 
 header img {
-    width: 150px;
+    width: 10vh;
     height: auto;
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #6a4c9c;
+main{
+    flex:1;
+    flex-direction: column;
+
 }
 
 /* Container principal */
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 400vh;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -83,7 +88,7 @@ h1 {
 /* Exibição da imagem do gato */
 .gato img {
     width: 100%;
-    max-width: 350px;
+    max-height: 40vh;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -102,8 +107,11 @@ h1 {
 
 /* Rodapé */
 footer {
+    height: 6vh;
+    width: 100%;
+    background-color: #3d3b61;
     margin-top: 30px;
-    font-size: 1rem;
-    color: #6a4c9c;
+    font-size: 2rem;
+    color: #cebcea;
     text-align: center;
 }
