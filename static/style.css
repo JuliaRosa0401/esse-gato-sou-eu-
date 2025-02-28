@@ -1,117 +1,137 @@
- /* Reset de margin e padding para garantir consistência */
- * {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f0f7;
-    color: #3d3b61;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 10vh;
+    padding: 20px 0;
+    background-color: #54325C;
+    color: #FFDC64;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
 }
-
-/* Cabeçalho */
-header { 
-    height: 10vh;
-    padding: 20px 0;;
-    text-align: center;
-    margin-bottom: 30px;
-    background-color: #6a4c9c;
-    display: flex;
-}
-
 header img {
-    width: 10vh;
-    height: auto;
-    margin-bottom: 20px;
+    height: 300%;
+    padding-top: 20px;
+    margin: 0 20px;
 }
-
-main{
-    flex:1;
+main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
-
 }
-
-/* Container principal */
 .container {
-    width: 90%;
-    max-width: 400vh;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Formulário */
 .form {
-    margin-bottom: 30px;
+    width: 800px;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 5px;
 }
-
 .form label {
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #6a4c9c;
+    font-size: 20px;
+    font-weight: 600;
 }
-
-.form input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #6a4c9c;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.form input[type="text"] {
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #54325C;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: 1px solid #54325C;
+    box-shadow: -2px 2px #eee;
+    height: 50px;
+    font-size: 20px;
 }
-
 .form button {
-    background-color: #9c7bb5;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 180px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    border: 1px solid #54325C;
+    border-radius: 25px;
+    color: #54325C;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 27px;
+    font-weight: 600;
+    box-shadow: 1px 1px 10px gray;
+    transition: 0.5s ease-in;
 }
-
 .form button:hover {
-    background-color: #6a4c9c;
+    background-color: #057952;
+    color: #f5f5f5;
+
+}
+.gato {
+    width: 700px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border: 20px solid #fff;
+    box-shadow: 10px 10px 10px #a4a4a4;
+    background-color: #fff;
 }
 
-/* Exibição da imagem do gato */
 .gato img {
     width: 100%;
-    max-height: 40vh;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    height: 350px;
+    object-fit: contain;
 }
-
-.gato p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #9c7bb5;
-}
-
-/* Mensagem de erro */
-.gato p.erro {
-    color: #ff5c8d;
-    font-size: 1.1rem;
-}
-
-/* Rodapé */
-footer {
-    height: 6vh;
+.gato p{
     width: 100%;
-    background-color: #3d3b61;
-    margin-top: 30px;
-    font-size: 2rem;
-    color: #cebcea;
+    height:50px;
+    color: #070353;
+    font-size: 2em;
     text-align: center;
+    padding: 14px;
+    font-weight: 800;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #FFDC64;
+    color: #54325C;
+    text-align: center;
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+footer img {
+    max-width: 70px;
+    height: auto;
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
 }
